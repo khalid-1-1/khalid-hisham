@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>404 | Khalid Hisham</title>
+<meta name="theme-color" content="#0f172a">
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<!-- Necessary exception: same early dir/lang + theme read used on index.html,
+     so a returning visitor sees this page in their saved language/theme
+     instead of a flash of the defaults. -->
+<script>
+(function () {
+    var lang = localStorage.getItem('khalid-lang') || 'ar';
+    var isEn = lang === 'en';
+    document.documentElement.setAttribute('lang', isEn ? 'en' : 'ar');
+    document.documentElement.setAttribute('dir', isEn ? 'ltr' : 'rtl');
+    if ((localStorage.getItem('khalid-theme') || 'dark') === 'light') {
+        document.documentElement.classList.add('light-theme');
+    }
+})();
+</script>
+</head>
+<body class="i18n-ready">
+
+<section class="notfound-section">
+    <span class="notfound-code">404</span>
+    <p class="notfound-message" data-i18n="notfound_message">الصفحة اللي بتدور عليها مش موجودة.</p>
+    <a href="index.html" class="btn btn-primary"><i class="fas fa-house" aria-hidden="true"></i> <span data-i18n="notfound_back">العودة للرئيسية</span></a>
+</section>
+
+<script type="module" src="js/theme.js"></script>
+<script type="module" src="js/language.js"></script>
+</body>
+</html>

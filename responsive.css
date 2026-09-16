@@ -1,0 +1,49 @@
+/* ============================================= */
+/* Responsive breakpoints — mobile / tablet        */
+/* ============================================= */
+
+@media (max-width: 900px) {
+    .nav-menu { position: fixed; top: 0; right: -85%; width: 78%; max-width: 320px; height: 100vh; background-color: var(--surface); flex-direction: column; padding: 110px 30px 40px; gap: 8px; transition: right var(--transition-smooth); box-shadow: -10px 0 40px rgba(0,0,0,0.25); z-index: 1000; }
+    .nav-menu.active { right: 0; }
+    .nav-menu li { width: 100%; border-bottom: 1px solid var(--border); }
+    .nav-menu .nav-link { display: block; padding: 14px 4px; }
+    .nav-menu .nav-link::after { display: none; }
+    .mobile-menu-btn { display: flex; z-index: 1001; }
+    .about-grid { grid-template-columns: 1fr; }
+    .hobbies-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-container h1 { font-size: 2.3rem; }
+    .faith-text { font-size: 1.3rem; }
+    .projects-grid { grid-template-columns: 1fr; }
+}
+
+/* [dir="rtl"] uses the logical `right` above; LTR mirrors to the left edge */
+html[dir="ltr"] .nav-menu { right: auto; left: -85%; box-shadow: 10px 0 40px rgba(0,0,0,0.25); }
+html[dir="ltr"] .nav-menu.active { left: 0; }
+
+@media (max-width: 700px) {
+    .media-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+    .lightbox-nav { width: 38px; height: 38px; font-size: 0.95rem; }
+    .lightbox-prev { left: 8px; }
+    .lightbox-next { right: 8px; }
+}
+
+@media (max-width: 500px) {
+    .hobbies-grid { grid-template-columns: 1fr 1fr; }
+    .back-to-top { bottom: 18px; inset-inline-end: 18px; width: 42px; height: 42px; }
+    .lightbox-close { top: -44px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 480px) {
+    .media-grid { grid-template-columns: 1fr; }
+    .audio-volume-slider { width: 50px; }
+}
+
+/* Personal journey: stack the 3 photos vertically with a vertical connector on small screens */
+@media (max-width: 640px) {
+    .journey-grid { grid-template-columns: 1fr; gap: 30px; }
+    .journey-arrow { transform: rotate(90deg); }
+}

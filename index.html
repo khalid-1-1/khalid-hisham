@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="الموقع الشخصي لخالد هشام - طالب كلية الآداب جامعة بنها، حافظ للقرآن الكريم">
+<meta name="theme-color" content="#0f172a">
+<title>خالد هشام | Khalid Hisham</title>
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://khalid-1-1.github.io/khalid-hisham/">
+<meta property="og:title" content="خالد هشام | Khalid Hisham">
+<meta property="og:description" content="الموقع الشخصي لخالد هشام - طالب كلية الآداب جامعة بنها، حافظ للقرآن الكريم">
+<meta property="og:image" content="https://khalid-1-1.github.io/khalid-hisham/images/khalid-avatar.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="خالد هشام | Khalid Hisham">
+<meta name="twitter:description" content="الموقع الشخصي لخالد هشام - طالب كلية الآداب جامعة بنها، حافظ للقرآن الكريم">
+<meta name="twitter:image" content="https://khalid-1-1.github.io/khalid-hisham/images/khalid-avatar.jpg">
+
+<link rel="canonical" href="https://khalid-1-1.github.io/khalid-hisham/">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Khalid Hisham",
+  "alternateName": "خالد هشام",
+  "url": "https://khalid-1-1.github.io/khalid-hisham/",
+  "image": "https://khalid-1-1.github.io/khalid-hisham/images/khalid-avatar.jpg",
+  "jobTitle": "Student",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Benha University - Faculty of Arts"
+  },
+  "knowsAbout": ["HTML", "CSS", "JavaScript", "Git", "GitHub", "GIS", "Digital Mapping"],
+  "sameAs": [
+    "https://www.facebook.com/Jhulio.900",
+    "https://instagram.com/khalid_gaballah"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Amiri+Quran&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<!-- Necessary exception: sets dir/lang and the saved dark/light theme
+     before first paint, so a returning visitor never sees a flash of the
+     wrong language, direction, or theme. The timeout is a safety net: if
+     js/language.js ever fails to load (bad MIME type on some host, network
+     hiccup...), the page still becomes visible instead of staying blank
+     forever. -->
+<script>
+(function () {
+    var lang = localStorage.getItem('khalid-lang') || 'ar';
+    var isEn = lang === 'en';
+    document.documentElement.setAttribute('lang', isEn ? 'en' : 'ar');
+    document.documentElement.setAttribute('dir', isEn ? 'ltr' : 'rtl');
+    if ((localStorage.getItem('khalid-theme') || 'dark') === 'light') {
+        document.documentElement.classList.add('light-theme');
+    }
+    setTimeout(function () {
+        document.body && document.body.classList.add('i18n-ready');
+    }, 1200);
+})();
+</script>
+</head>
+<body>
+
+<div class="scroll-progress-wrap" aria-hidden="true"><div class="scroll-progress-bar" id="scroll-progress-bar"></div></div>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="nav-logo"><span class="nav-logo-mark">K</span>Khalid<span class="dot">.</span></a>
+        <ul class="nav-menu" id="nav-menu-list">
+            <li><a href="#home" class="nav-link active" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#about" class="nav-link" data-i18n="nav_about">من أنا</a></li>
+            <li><a href="#projects" class="nav-link" data-i18n="nav_projects">مشاريعي</a></li>
+            <li><a href="#skills" class="nav-link" data-i18n="nav_skills">مهاراتي</a></li>
+            <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">رحلتي بالصور</a></li>
+            <li><a href="#hobbies" class="nav-link" data-i18n="nav_hobbies">هواياتي</a></li>
+            <li><a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="lang-toggle" data-i18n-aria="aria_lang_toggle" aria-label="تغيير اللغة">English</button>
+            <button id="theme-toggle" data-i18n-aria="aria_theme_toggle" aria-label="تبديل الوضع الليلي/النهاري"><i class="fas fa-moon" aria-hidden="true"></i></button>
+            <button class="mobile-menu-btn" id="mobile-menu" data-i18n-aria="aria_mobile_menu" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-menu-list">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+</nav>
+
+<section id="home" class="hero-section">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+        <div class="hero-avatar-wrap reveal">
+            <div class="hero-avatar">
+                <img src="images/khalid-avatar.jpg" alt="خالد هشام" fetchpriority="high" decoding="async">
+                <span>K</span>
+            </div>
+        </div>
+        <span class="hero-eyebrow reveal" data-i18n="hero_eyebrow">بسم الله الرحمن الرحيم</span>
+        <h1 class="reveal" data-i18n-html="hero_title">أنا <span class="text-gradient">خالد هشام</span></h1>
+        <p class="hero-role reveal" data-i18n-html="hero_role">طالب بكلية الآداب <span class="sep">|</span> مهتم بالبرمجة والتقنية</p>
+        <p class="tagline reveal" data-i18n="hero_tagline">طالب في كلية الآداب - جامعة بنها، بحب أطور نفسي في البرمجة، وبيني وبين الرياضة والفنون البصرية شغف مستمر.</p>
+        <div class="hero-meta reveal">
+            <span class="meta-pill"><i class="fas fa-graduation-cap" aria-hidden="true"></i> <span data-i18n="meta_college_short">طالب بكلية الآداب</span></span>
+            <span class="meta-pill"><i class="fas fa-book-quran" aria-hidden="true"></i> <span data-i18n="meta_hafez">حافظ للقرآن الكريم</span></span>
+            <span class="meta-pill"><i class="fas fa-laptop-code" aria-hidden="true"></i> <span data-i18n="meta_tech">مهتم بالبرمجة</span></span>
+        </div>
+        <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary"><i class="fas fa-diagram-project" aria-hidden="true"></i> <span data-i18n="hero_btn_projects">مشاريعي</span></a>
+            <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane" aria-hidden="true"></i> <span data-i18n="hero_btn_contact">تواصل معي</span></a>
+        </div>
+        <div class="hero-socials reveal">
+            <a href="https://wa.me/201094647840" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://instagram.com/khalid_gaballah" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/Jhulio.900" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="mailto:khalidhishamali@gmail.com" aria-label="Gmail"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down"><i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+</section>
+
+<section id="about" class="about-section section-padding">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="subtitle" data-i18n="about_subtitle">تعرف عليا</span>
+            <h2 data-i18n="about_title">من أنا؟</h2>
+            <div class="line"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <span class="about-kicker"><i class="fas fa-feather" aria-hidden="true"></i> <span data-i18n="about_kicker">نبذة عني</span></span>
+                <p data-i18n-html="about_p1">اسمي <span class="highlight">خالد</span>، طالب بكلية الآداب - جامعة بنها.</p>
+                <p data-i18n-html="about_p2">في وقتي الحر بلاقي نفسي بين الرياضة والجيم، وبين المونتاج والإيديت.</p>
+            </div>
+            <div class="about-card reveal">
+                <h3><i class="fas fa-id-card" aria-hidden="true"></i> <span data-i18n="about_card_title">بياناتي</span></h3>
+                <div class="info-row"><span data-i18n="info_name">الاسم</span><span data-i18n="info_name_val">خالد هشام</span></div>
+                <div class="info-row"><span data-i18n="info_study">الدراسة</span><span data-i18n="info_study_val">كلية الآداب - جامعة بنها</span></div>
+                <div class="info-row"><span data-i18n="info_major">التخصص</span><span data-i18n="info_major_val">مساحة وخرائط رقمية</span></div>
+                <div class="info-row"><span data-i18n="info_interests">الاهتمامات</span><span data-i18n="info_interests_val">البرمجة، الرياضة، المونتاج</span></div>
+                <div class="info-row"><span data-i18n="info_skills">المهارات</span><span data-i18n="info_skills_val">البرمجة، تحرير الفيديو</span></div>
+                <div class="info-row"><span data-i18n="info_city">المدينة</span><span data-i18n="info_city_val">مصر</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects: dedicated section, rendered from data/projects.js via js/projects.js.
+     Placeholder projects only (marked "coming soon") — no invented projects. -->
+<section id="projects" class="projects-section section-padding">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="subtitle" data-i18n="projects_subtitle">أعمالي</span>
+            <h2 data-i18n="projects_title">مشاريعي</h2>
+            <div class="line"></div>
+        </div>
+        <div class="projects-grid" aria-live="polite"></div>
+    </div>
+</section>
+
+<!-- Skills: dedicated section, rendered from data/skills.js via js/projects.js. -->
+<section id="skills" class="skills-section section-padding">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="subtitle" data-i18n="skills_subtitle">قدراتي</span>
+            <h2 data-i18n="skills_title">مهاراتي</h2>
+            <div class="line"></div>
+        </div>
+        <div class="skills-grid" aria-live="polite"></div>
+    </div>
+</section>
+
+<!-- Personal journey: three photos only (young -> university -> now), replacing the
+     old multi-group gallery. The "Memories & Events" group has been removed entirely
+     per the redesign brief, along with its images, styles, scripts and translation keys. -->
+<section id="gallery" class="gallery-section section-padding">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="subtitle" data-i18n="gallery_subtitle">رحلتي</span>
+            <h2 data-i18n="gallery_title">من الطفولة للنهاردة</h2>
+            <div class="line"></div>
+        </div>
+        <div class="journey-grid">
+            <div class="journey-item reveal">
+                <div class="journey-frame">
+                    <img src="images/young-khaled.jpg" alt="خالد وهو صغير" loading="lazy" decoding="async">
+                    <div class="journey-placeholder"><i class="fas fa-child-reaching" aria-hidden="true"></i><span data-i18n="gallery_no_photo">الصورة قيد الإضافة</span></div>
+                </div>
+                <h4 data-i18n="gallery_young">وأنا صغير</h4>
+            </div>
+            <i class="fas fa-arrow-left journey-arrow" aria-hidden="true"></i>
+            <div class="journey-item reveal">
+                <div class="journey-frame">
+                    <img src="images/university-khaled.jpg" alt="خالد في الجامعة" loading="lazy" decoding="async">
+                    <div class="journey-placeholder"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span data-i18n="gallery_no_photo">الصورة قيد الإضافة</span></div>
+                </div>
+                <h4 data-i18n="gallery_university">في الجامعة</h4>
+            </div>
+            <i class="fas fa-arrow-left journey-arrow" aria-hidden="true"></i>
+            <div class="journey-item reveal">
+                <div class="journey-frame">
+                    <img src="images/old-khaled.jpg" alt="خالد الآن" loading="lazy" decoding="async">
+                    <div class="journey-placeholder"><i class="fas fa-user" aria-hidden="true"></i><span data-i18n="gallery_no_photo">الصورة قيد الإضافة</span></div>
+                </div>
+                <h4 data-i18n="gallery_old">وأنا كبير</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     Personal content: Hobbies, Quran Journey, Faith, Media.
+     Deliberately quieter than Projects/Skills (see .personal-section
+     in style.css) so it reads as "who Khalid is" rather than
+     competing with the professional sections as a second main act.
+     ============================================================ -->
+<section id="hobbies" class="hobbies-section personal-section section-padding">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="subtitle" data-i18n="hobbies_subtitle">وقت الفراغ</span>
+            <h2 data-i18n="hobbies_title">هواياتي واهتماماتي</h2>
+            <div class="line"></div>
+        </div>
+        <div class="hobbies-grid">
+            <div class="hobby-card reveal"><div class="hobby-icon"><i class="fas fa-swimmer" aria-hidden="true"></i></div><h4 data-i18n="hobby_swim">السباحة</h4></div>
+            <div class="hobby-card reveal"><div class="hobby-icon"><i class="fas fa-code" aria-hidden="true"></i></div><h4 data-i18n="hobby_code">البرمجة</h4></div>
+            <div class="hobby-card reveal"><div class="hobby-icon"><i class="fas fa-gamepad" aria-hidden="true"></i></div><h4 data-i18n="hobby_games">الألعاب</h4></div>
+            <div class="hobby-card reveal"><div class="hobby-icon"><i class="fas fa-futbol" aria-hidden="true"></i></div><h4 data-i18n="hobby_football">كرة القدم</h4></div>
+            <div class="hobby-card reveal"><div class="hobby-icon"><i class="fas fa-film" aria-hidden="true"></i></div><h4 data-i18n="hobby_edit">المونتاج والإيديت</h4></div>
+            <div class="hobby-card reveal"><div class="hobby-icon"><i class="fas fa-dumbbell" aria-hidden="true"></i></div><h4 data-i18n="hobby_gym">الجيم</h4></div>
+        </div>
+    </div>
+</section>
+
+<section id="quran-journey" class="quran-journey-section personal-section section-padding">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="subtitle" data-i18n="qj_subtitle">علاقتي بالقرآن</span>
+            <h2 data-i18n="qj_title">رحلتي مع القرآن الكريم</h2>
+            <div class="line"></div>
+        </div>
+        <div class="quran-journey-card reveal">
+            <div class="qj-icon"><i class="fas fa-book-quran" aria-hidden="true"></i></div>
+            <p class="qj-verse" data-i18n="qj_verse">﴿ وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ ﴾</p>
+            <span class="qj-verse-source" data-i18n="qj_verse_source">سورة القمر - آية 17</span>
+            <div class="qj-divider"></div>
+            <h3 data-i18n="qj_headline">لحظة ختم القرآن الكريم</h3>
+            <p data-i18n-html="qj_text">بفضل الله، ختمت حفظ القرآن الكريم كاملاً.</p>
+            <div class="qj-dates qj-timeline">
+                <div class="qj-timeline-item"><span class="qj-dot"><i class="fas fa-calendar-check" aria-hidden="true"></i></span><span class="qj-label" data-i18n="qj_hijri">1 رمضان 1443هـ</span></div>
+                <div class="qj-timeline-item"><span class="qj-dot"><i class="fas fa-calendar-day" aria-hidden="true"></i></span><span class="qj-label" data-i18n="qj_gregorian">2 أبريل 2022م</span></div>
+                <div class="qj-timeline-item"><span class="qj-dot"><i class="fas fa-user-graduate" aria-hidden="true"></i></span><span class="qj-label" data-i18n="qj_stage">الصف الثالث الإعدادي</span></div>
+                <div class="qj-timeline-item"><span class="qj-dot"><i class="fas fa-microphone-alt" aria-hidden="true"></i></span><span class="qj-label" data-i18n="qj_tajweed">بدرس التجويد حالياً</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faith" class="faith-section personal-section section-padding">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="subtitle" data-i18n="faith_subtitle">وقفة إيمانية</span>
+            <h2 data-i18n="faith_title">آية - حديث - ذكر</h2>
+            <div class="line"></div>
+        </div>
+        <div class="faith-card reveal">
+            <button class="faith-copy-btn" id="faith-copy" type="button" aria-label="Copy text"><i class="fas fa-copy" aria-hidden="true"></i></button>
+            <div class="faith-tabs">
+                <button class="faith-tab active" data-type="ayah" data-i18n="tab_ayah">آيات قرآنية</button>
+                <button class="faith-tab" data-type="hadith" data-i18n="tab_hadith">أحاديث نبوية</button>
+                <button class="faith-tab" data-type="zekr" data-i18n="tab_zekr">أذكار</button>
+            </div>
+            <div class="faith-icon"><i class="fas fa-mosque" aria-hidden="true"></i></div>
+            <p class="faith-text" id="faith-text"></p>
+            <p class="faith-source" id="faith-source"></p>
+            <div class="faith-nav">
+                <button id="faith-prev" aria-label="السابق"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                <button id="faith-next" aria-label="التالي"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="media" class="media-section personal-section section-padding">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="subtitle" data-i18n="media_subtitle">استمع معايا</span>
+            <h2 data-i18n="media_title">قرآن - أناشيد</h2>
+            <div class="line"></div>
+        </div>
+        <p class="media-note reveal" data-i18n="media_note">لا تتجاهل استمع لعل هذا من يدخلنا الجنة</p>
+
+        <h4 class="media-group-title reveal"><i class="fas fa-book-quran" aria-hidden="true"></i><span data-i18n="media_quran_group">تلاوات قرآنية</span></h4>
+        <div class="media-grid">
+            <div class="media-card audio-card reveal">
+                <div class="media-card-header">
+                    <div class="media-icon"><i class="fas fa-book-quran" aria-hidden="true"></i></div>
+                    <div class="media-card-info">
+                        <h4 data-i18n="media_placeholder1">سورة الفرقان / عمر عكاشه</h4>
+                        <span class="media-tag" data-i18n="media_tag_quran">قرآن كريم</span>
+                    </div>
+                </div>
+                <audio class="audio-source" src="audio/quran1.mp3" preload="metadata"></audio>
+                <div class="audio-player">
+                    <button class="audio-play-btn" type="button" aria-label="Play"><i class="fas fa-play" aria-hidden="true"></i></button>
+                    <div class="audio-player-main">
+                        <div class="audio-progress-bar"><div class="audio-progress-fill"></div><div class="audio-progress-handle"></div></div>
+                        <div class="audio-time-row"><span class="audio-current-time">0:00</span><span class="audio-duration">0:00</span></div>
+                    </div>
+                    <div class="audio-volume-wrap">
+                        <button class="audio-mute-btn" type="button" aria-label="Mute"><i class="fas fa-volume-up" aria-hidden="true"></i></button>
+                        <input type="range" class="audio-volume-slider" min="0" max="1" step="0.01" value="1" aria-label="Volume">
+                    </div>
+                    <a class="audio-download-btn" href="audio/quran1.mp3" download aria-label="Download" title="Download"><i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="media-card audio-card reveal">
+                <div class="media-card-header">
+                    <div class="media-icon"><i class="fas fa-book-quran" aria-hidden="true"></i></div>
+                    <div class="media-card-info">
+                        <h4 data-i18n="media_placeholder2">سورة نوح / عمر مطر</h4>
+                        <span class="media-tag" data-i18n="media_tag_quran">قرآن كريم</span>
+                    </div>
+                </div>
+                <audio class="audio-source" src="audio/quran2.mp3" preload="metadata"></audio>
+                <div class="audio-player">
+                    <button class="audio-play-btn" type="button" aria-label="Play"><i class="fas fa-play" aria-hidden="true"></i></button>
+                    <div class="audio-player-main">
+                        <div class="audio-progress-bar"><div class="audio-progress-fill"></div><div class="audio-progress-handle"></div></div>
+                        <div class="audio-time-row"><span class="audio-current-time">0:00</span><span class="audio-duration">0:00</span></div>
+                    </div>
+                    <div class="audio-volume-wrap">
+                        <button class="audio-mute-btn" type="button" aria-label="Mute"><i class="fas fa-volume-up" aria-hidden="true"></i></button>
+                        <input type="range" class="audio-volume-slider" min="0" max="1" step="0.01" value="1" aria-label="Volume">
+                    </div>
+                    <a class="audio-download-btn" href="audio/quran2.mp3" download aria-label="Download" title="Download"><i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="media-card audio-card reveal">
+                <div class="media-card-header">
+                    <div class="media-icon"><i class="fas fa-book-quran" aria-hidden="true"></i></div>
+                    <div class="media-card-info">
+                        <h4 data-i18n="media_placeholder3">سورة فاطر / أحمد الششتاوي</h4>
+                        <span class="media-tag" data-i18n="media_tag_quran">قرآن كريم</span>
+                    </div>
+                </div>
+                <audio class="audio-source" src="audio/quran3.mp3" preload="metadata"></audio>
+                <div class="audio-player">
+                    <button class="audio-play-btn" type="button" aria-label="Play"><i class="fas fa-play" aria-hidden="true"></i></button>
+                    <div class="audio-player-main">
+                        <div class="audio-progress-bar"><div class="audio-progress-fill"></div><div class="audio-progress-handle"></div></div>
+                        <div class="audio-time-row"><span class="audio-current-time">0:00</span><span class="audio-duration">0:00</span></div>
+                    </div>
+                    <div class="audio-volume-wrap">
+                        <button class="audio-mute-btn" type="button" aria-label="Mute"><i class="fas fa-volume-up" aria-hidden="true"></i></button>
+                        <input type="range" class="audio-volume-slider" min="0" max="1" step="0.01" value="1" aria-label="Volume">
+                    </div>
+                    <a class="audio-download-btn" href="audio/quran3.mp3" download aria-label="Download" title="Download"><i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="media-group-title reveal"><i class="fas fa-music" aria-hidden="true"></i><span data-i18n="media_nasheed_group">أناشيد</span></h4>
+        <div class="media-grid">
+            <div class="media-card audio-card reveal">
+                <div class="media-card-header">
+                    <div class="media-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
+                    <div class="media-card-info">
+                        <h4 data-i18n="media_placeholder4">غريب لست أعرفني</h4>
+                        <span class="media-tag" data-i18n="media_tag_nasheed">نشيد</span>
+                    </div>
+                </div>
+                <audio class="audio-source" src="audio/nashid1.mp3" preload="metadata"></audio>
+                <div class="audio-player">
+                    <button class="audio-play-btn" type="button" aria-label="Play"><i class="fas fa-play" aria-hidden="true"></i></button>
+                    <div class="audio-player-main">
+                        <div class="audio-progress-bar"><div class="audio-progress-fill"></div><div class="audio-progress-handle"></div></div>
+                        <div class="audio-time-row"><span class="audio-current-time">0:00</span><span class="audio-duration">0:00</span></div>
+                    </div>
+                    <div class="audio-volume-wrap">
+                        <button class="audio-mute-btn" type="button" aria-label="Mute"><i class="fas fa-volume-up" aria-hidden="true"></i></button>
+                        <input type="range" class="audio-volume-slider" min="0" max="1" step="0.01" value="1" aria-label="Volume">
+                    </div>
+                    <a class="audio-download-btn" href="audio/nashid1.mp3" download aria-label="Download" title="Download"><i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="media-card audio-card reveal">
+                <div class="media-card-header">
+                    <div class="media-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
+                    <div class="media-card-info">
+                        <h4 data-i18n="media_placeholder5">قل للعيون اذا تساقط دمعها</h4>
+                        <span class="media-tag" data-i18n="media_tag_nasheed">نشيد</span>
+                    </div>
+                </div>
+                <audio class="audio-source" src="audio/nashid2.mp3" preload="metadata"></audio>
+                <div class="audio-player">
+                    <button class="audio-play-btn" type="button" aria-label="Play"><i class="fas fa-play" aria-hidden="true"></i></button>
+                    <div class="audio-player-main">
+                        <div class="audio-progress-bar"><div class="audio-progress-fill"></div><div class="audio-progress-handle"></div></div>
+                        <div class="audio-time-row"><span class="audio-current-time">0:00</span><span class="audio-duration">0:00</span></div>
+                    </div>
+                    <div class="audio-volume-wrap">
+                        <button class="audio-mute-btn" type="button" aria-label="Mute"><i class="fas fa-volume-up" aria-hidden="true"></i></button>
+                        <input type="range" class="audio-volume-slider" min="0" max="1" step="0.01" value="1" aria-label="Volume">
+                    </div>
+                    <a class="audio-download-btn" href="audio/nashid2.mp3" download aria-label="Download" title="Download"><i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="media-card audio-card reveal">
+                <div class="media-card-header">
+                    <div class="media-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
+                    <div class="media-card-info">
+                        <h4 data-i18n="media_placeholder6">هل نلتقي ؟</h4>
+                        <span class="media-tag" data-i18n="media_tag_nasheed">نشيد</span>
+                    </div>
+                </div>
+                <audio class="audio-source" src="audio/nashidd3.mp3" preload="metadata"></audio>
+                <div class="audio-player">
+                    <button class="audio-play-btn" type="button" aria-label="Play"><i class="fas fa-play" aria-hidden="true"></i></button>
+                    <div class="audio-player-main">
+                        <div class="audio-progress-bar"><div class="audio-progress-fill"></div><div class="audio-progress-handle"></div></div>
+                        <div class="audio-time-row"><span class="audio-current-time">0:00</span><span class="audio-duration">0:00</span></div>
+                    </div>
+                    <div class="audio-volume-wrap">
+                        <button class="audio-mute-btn" type="button" aria-label="Mute"><i class="fas fa-volume-up" aria-hidden="true"></i></button>
+                        <input type="range" class="audio-volume-slider" min="0" max="1" step="0.01" value="1" aria-label="Volume">
+                    </div>
+                    <a class="audio-download-btn" href="audio/nashidd3.mp3" download aria-label="Download" title="Download"><i class="fas fa-download" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="cta-section section-padding">
+    <div class="cta-container reveal">
+        <h2 data-i18n="contact_title">يسعدني تواصلك معايا</h2>
+        <p data-i18n="contact_p">لو حابب تتكلم معايا أو تعرف أكتر عني، تقدر تتواصل معايا من هنا.</p>
+        <div class="contact-grid">
+            <a href="https://wa.me/201094647840?text=السلام+عليكم" target="_blank" rel="noopener" class="cbtn cbtn-wa"><i class="fa-brands fa-whatsapp fa-lg" aria-hidden="true" style="margin-left:6px;"></i> <span data-i18n="contact_wa">واتساب</span></a>
+            <a href="https://www.facebook.com/Jhulio.900" target="_blank" rel="noopener" class="cbtn cbtn-fb"><i class="fa-brands fa-facebook-f fa-lg" aria-hidden="true" style="margin-left:6px;"></i> <span data-i18n="contact_fb">فيسبوك</span></a>
+            <a href="https://instagram.com/khalid_gaballah" target="_blank" rel="noopener" class="cbtn cbtn-ig"><i class="fa-brands fa-instagram fa-lg" aria-hidden="true" style="margin-left:6px;"></i> <span data-i18n="contact_ig">إنستجرام</span></a>
+        </div>
+        <div class="phone-row">
+            <div class="phone-item"><i class="fa-solid fa-phone" aria-hidden="true" style="color:var(--gold);margin-left:6px;"></i> <a href="tel:+201094647840">01094647840</a> <button class="copy-phone-btn" type="button" data-phone="01094647840" aria-label="Copy phone number"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
+            <div class="phone-item"><i class="fa-solid fa-phone" aria-hidden="true" style="color:var(--gold);margin-left:6px;"></i> <a href="tel:+201551434096">01551434096</a> <button class="copy-phone-btn" type="button" data-phone="01551434096" aria-label="Copy phone number"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
+        </div>
+        <div class="qr-box reveal">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fkhalid-1-1.github.io%2Fkhalid-hisham%2F" alt="QR Code" width="130" height="130" loading="lazy" decoding="async">
+            <span data-i18n="qr_note">امسح الكود عشان توصل للموقع بسرعة</span>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <h3>Khalid Hisham<span class="dot">.</span></h3>
+            <p data-i18n="footer_tagline">Personal Website</p>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#home" data-i18n="nav_home">الرئيسية</a>
+            <a href="#about" data-i18n="nav_about">من أنا</a>
+            <a href="#projects" data-i18n="nav_projects">مشاريعي</a>
+            <a href="#skills" data-i18n="nav_skills">مهاراتي</a>
+            <a href="#quran-journey" data-i18n="nav_quran">رحلتي مع القرآن</a>
+            <a href="#gallery" data-i18n="nav_gallery">رحلتي بالصور</a>
+            <a href="#media" data-i18n="nav_media">قرآن وأناشيد</a>
+            <a href="#contact" data-i18n="nav_contact">تواصل</a>
+        </nav>
+        <div class="footer-bottom">
+            <p class="copyright" data-i18n="footer_copy">© 2026 خالد. جميع الحقوق محفوظة.</p>
+            <div class="footer-socials">
+                <a href="mailto:khalidhishamali@gmail.com" aria-label="Gmail"><i class="fab fa-google" aria-hidden="true"></i></a>
+                <a href="https://instagram.com/khalid_gaballah" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/Jhulio.900" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top" type="button" data-i18n-aria="back_to_top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image preview" tabindex="-1">
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Next"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+    <div class="lightbox-content">
+        <span class="lightbox-counter" id="lightbox-counter"></span>
+        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="module" src="js/theme.js"></script>
+<script type="module" src="js/language.js"></script>
+<script type="module" src="js/projects.js"></script>
+<script type="module" src="js/gallery.js"></script>
+<script type="module" src="js/navigation.js"></script>
+<script type="module" src="js/audio.js"></script>
+<script type="module" src="js/interactions.js"></script>
+</body>
+</html>
