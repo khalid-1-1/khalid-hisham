@@ -3,11 +3,12 @@ import en from '../locales/en.js';
 import { faithData } from '../data/content.js';
 
 const dictionaries = { ar, en };
-let activeDict = dictionaries[localStorage.getItem('khalid-lang') || 'ar'];
-document.addEventListener('khalid:langchange', (e) => { activeDict = e.detail.dict; });
+let activeLang = localStorage.getItem('khalid-lang') || 'ar';
+let activeDict = dictionaries[activeLang];
+document.addEventListener('khalid:langchange', (e) => { activeLang = e.detail.lang; activeDict = e.detail.dict; });
 
 document.addEventListener('DOMContentLoaded', () => {
-l
+
     const heroAvatar = document.querySelector('.hero-avatar');
     const heroAvatarImg = heroAvatar ? heroAvatar.querySelector('img') : null;
     if (heroAvatar && heroAvatarImg) {
@@ -56,14 +57,17 @@ l
     function renderFaith() {
         if (!faithText || !faithSource) return;
         const item = faithData[faithType][faithIndex];
+        const content = item[activeLang] || item.ar;
         faithText.style.opacity = 0;
         setTimeout(() => {
             faithText.className = 'faith-text ' + (faithType !== 'ayah' ? faithType : '');
-            faithText.textContent = item.text;
-            faithSource.textContent = item.source;
+            faithText.textContent = content.text;
+            faithSource.textContent = content.source;
             faithText.style.opacity = 1;
         }, 200);
     }
+
+    document.addEventListener('khalid:langchange', renderFaith);
 
     faithTabs.forEach(tab => {
         tab.addEventListener('click', () => {

@@ -136,8 +136,7 @@
         <div class="about-grid">
             <div class="about-text reveal">
                 <span class="about-kicker"><i class="fas fa-feather" aria-hidden="true"></i> <span data-i18n="about_kicker">نبذة عني</span></span>
-                <p data-i18n-html="about_p1">اسمي <span class="highlight">خالد</span>، طالب بكلية الآداب - جامعة بنها.</p>
-                <p data-i18n-html="about_p2">في وقتي الحر بلاقي نفسي بين الرياضة والجيم، وبين المونتاج والإيديت.</p>
+                <p data-i18n-html="about_p1">أنا <span class="highlight">خالد هشام</span>، طالب بكلية الآداب بجامعة بنها، مهتم بالبرمجة والتقنية، وبحب أطور نفسي وأجرب حاجات جديدة.</p>
             </div>
             <div class="about-card reveal">
                 <h3><i class="fas fa-id-card" aria-hidden="true"></i> <span data-i18n="about_card_title">بياناتي</span></h3>
@@ -146,7 +145,7 @@
                 <div class="info-row"><span data-i18n="info_major">التخصص</span><span data-i18n="info_major_val">مساحة وخرائط رقمية</span></div>
                 <div class="info-row"><span data-i18n="info_interests">الاهتمامات</span><span data-i18n="info_interests_val">البرمجة، الرياضة، المونتاج</span></div>
                 <div class="info-row"><span data-i18n="info_skills">المهارات</span><span data-i18n="info_skills_val">البرمجة، تحرير الفيديو</span></div>
-                <div class="info-row"><span data-i18n="info_city">المدينة</span><span data-i18n="info_city_val">مصر</span></div>
+                <div class="info-row"><span data-i18n="info_city">الدولة</span><span data-i18n="info_city_val">مصر</span></div>
             </div>
         </div>
     </div>
@@ -261,7 +260,7 @@
             <div class="line"></div>
         </div>
         <div class="faith-card reveal">
-            <button class="faith-copy-btn" id="faith-copy" type="button" aria-label="Copy text"><i class="fas fa-copy" aria-hidden="true"></i></button>
+            <button class="faith-copy-btn" id="faith-copy" type="button" data-i18n-aria="aria_faith_copy" aria-label="Copy text"><i class="fas fa-copy" aria-hidden="true"></i></button>
             <div class="faith-tabs">
                 <button class="faith-tab active" data-type="ayah" data-i18n="tab_ayah">آيات قرآنية</button>
                 <button class="faith-tab" data-type="hadith" data-i18n="tab_hadith">أحاديث نبوية</button>
@@ -271,8 +270,8 @@
             <p class="faith-text" id="faith-text"></p>
             <p class="faith-source" id="faith-source"></p>
             <div class="faith-nav">
-                <button id="faith-prev" aria-label="السابق"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
-                <button id="faith-next" aria-label="التالي"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button id="faith-prev" data-i18n-aria="aria_faith_prev" aria-label="السابق"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                <button id="faith-next" data-i18n-aria="aria_faith_next" aria-label="التالي"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
             </div>
         </div>
     </div>
@@ -439,12 +438,8 @@
             <a href="https://instagram.com/khalid_gaballah" target="_blank" rel="noopener" class="cbtn cbtn-ig"><i class="fa-brands fa-instagram fa-lg" aria-hidden="true" style="margin-left:6px;"></i> <span data-i18n="contact_ig">إنستجرام</span></a>
         </div>
         <div class="phone-row">
-            <div class="phone-item"><i class="fa-solid fa-phone" aria-hidden="true" style="color:var(--gold);margin-left:6px;"></i> <a href="tel:+201094647840">01094647840</a> <button class="copy-phone-btn" type="button" data-phone="01094647840" aria-label="Copy phone number"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
-            <div class="phone-item"><i class="fa-solid fa-phone" aria-hidden="true" style="color:var(--gold);margin-left:6px;"></i> <a href="tel:+201551434096">01551434096</a> <button class="copy-phone-btn" type="button" data-phone="01551434096" aria-label="Copy phone number"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
-        </div>
-        <div class="qr-box reveal">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://khalid-hisham.vercel.app/" alt="QR Code" width="130" height="130" loading="lazy" decoding="async">
-            <span data-i18n="qr_note">امسح الكود عشان توصل للموقع بسرعة</span>
+            <div class="phone-item"><i class="fa-solid fa-phone" aria-hidden="true" style="color:var(--gold);margin-left:6px;"></i> <a href="tel:+201094647840">01094647840</a> <button class="copy-phone-btn" type="button" data-phone="01094647840" data-i18n-aria="aria_copy_phone" aria-label="Copy phone number"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
+            <div class="phone-item"><i class="fa-solid fa-phone" aria-hidden="true" style="color:var(--gold);margin-left:6px;"></i> <a href="tel:+201551434096">01551434096</a> <button class="copy-phone-btn" type="button" data-phone="01551434096" data-i18n-aria="aria_copy_phone" aria-label="Copy phone number"><i class="fas fa-copy" aria-hidden="true"></i></button></div>
         </div>
     </div>
 </section>
@@ -481,11 +476,11 @@
 </button>
 
 <div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image preview" tabindex="-1">
-    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-    <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Next"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" data-i18n-aria="aria_lightbox_prev" aria-label="Previous"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" data-i18n-aria="aria_lightbox_next" aria-label="Next"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
     <div class="lightbox-content">
         <span class="lightbox-counter" id="lightbox-counter"></span>
-        <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close">
+        <button class="lightbox-close" id="lightbox-close" type="button" data-i18n-aria="aria_lightbox_close" aria-label="Close">
             <i class="fas fa-times" aria-hidden="true"></i>
         </button>
         <img id="lightbox-img" src="" alt="">

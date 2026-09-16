@@ -12,15 +12,14 @@ export default {
     hero_btn_projects: "مشاريعي", hero_btn_contact: "تواصل معي",
 
     about_subtitle: "تعرف عليا", about_title: "من أنا؟", about_kicker: "نبذة عني",
-    about_p1: 'اسمي <span class="highlight">خالد</span>، طالب بكلية الآداب - جامعة بنها. بحب أستكشف حاجات جديدة كل يوم، وبحاول أوازن بين حياتي الدراسية وحفظي للقرآن الكريم واهتمامي بالتقنية والبرمجة. بؤمن إن التطور المستمر للنفس - في العلم زي في الإيمان - هو أساس أي نجاح حقيقي.',
-    about_p2: 'في وقتي الحر بلاقي نفسي بين الرياضة والجيم، وبين المونتاج والإيديت، وكمان بحب متابعة كرة القدم والألعاب. الجمع بين الجانب العملي والجانب الإيماني هو اللي بيشكّل شخصيتي.',
+    about_p1: 'أنا <span class="highlight">خالد هشام</span>، طالب بكلية الآداب بجامعة بنها، مهتم بالبرمجة والتقنية، وبحب أطور نفسي وأجرب حاجات جديدة.',
     about_card_title: "بياناتي",
     info_name: "الاسم", info_name_val: "خالد هشام",
     info_study: "الدراسة", info_study_val: "كلية الآداب - جامعة بنها",
     info_major: "التخصص", info_major_val: "مساحة وخرائط رقمية",
     info_interests: "الاهتمامات", info_interests_val: "البرمجة، الرياضة، المونتاج",
     info_skills: "المهارات", info_skills_val: "البرمجة، تحرير الفيديو",
-    info_city: "المدينة", info_city_val: "مصر",
+    info_city: "الدولة", info_city_val: "مصر",
 
     gallery_subtitle: "رحلتي", gallery_title: "من الطفولة للنهاردة",
     gallery_young: "وأنا صغير", gallery_university: "في الجامعة", gallery_old: "أنا دلوقتي",
@@ -56,13 +55,15 @@ export default {
     contact_title: "يسعدني تواصلك معايا",
     contact_p: "لو حابب تتكلم معايا أو تعرف أكتر عني، تقدر تتواصل معايا من هنا.",
     contact_wa: "واتساب", contact_fb: "فيسبوك", contact_ig: "إنستجرام",
-    qr_note: "امسح الكود عشان توصل للموقع بسرعة",
 
     footer_tagline: "الموقع الشخصي",
     footer_copy: "© 2026 خالد. جميع الحقوق محفوظة.",
 
     aria_lang_toggle: "تغيير اللغة", aria_theme_toggle: "تبديل الوضع الليلي/النهاري",
     aria_mobile_menu: "فتح القائمة", back_to_top: "العودة للأعلى",
+    aria_faith_prev: "السابق", aria_faith_next: "التالي", aria_faith_copy: "نسخ النص",
+    aria_copy_phone: "نسخ رقم الهاتف",
+    aria_lightbox_prev: "السابق", aria_lightbox_next: "التالي", aria_lightbox_close: "إغلاق",
 
     notfound_message: "الصفحة اللي بتدور عليها مش موجودة.",
     notfound_back: "العودة للرئيسية",

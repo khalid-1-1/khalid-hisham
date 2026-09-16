@@ -12,15 +12,14 @@ export default {
     hero_btn_projects: "View Projects", hero_btn_contact: "Contact me",
 
     about_subtitle: "Get to know me", about_title: "Who am I?", about_kicker: "About Me",
-    about_p1: 'My name is <span class="highlight">Khalid</span>, a student at the Faculty of Arts, Benha University. I love exploring new things every day, balancing my studies, my bond with the Quran, and my interest in technology and programming. I believe continuous self-development — in knowledge as in faith — is the foundation of real success.',
-    about_p2: 'In my free time you\'ll find me at the gym or playing sports, editing videos, or following football and gaming. Balancing the practical side of life with the spiritual side is what shapes who I am.',
+    about_p1: 'I\'m <span class="highlight">Khalid Hisham</span>, an Arts student at Benha University with an interest in programming and technology. I enjoy learning, building, and exploring new ideas.',
     about_card_title: "My Info",
     info_name: "Name", info_name_val: "Khalid Hisham",
     info_study: "Education", info_study_val: "Faculty of Arts, Benha University",
     info_major: "Major", info_major_val: "Surveying & Digital Mapping",
     info_interests: "Interests", info_interests_val: "Programming, Sports, Video Editing",
     info_skills: "Skills", info_skills_val: "Programming, Video Editing",
-    info_city: "Location", info_city_val: "Egypt",
+    info_city: "Country", info_city_val: "Egypt",
 
     gallery_subtitle: "My Journey", gallery_title: "From Childhood to Today",
     gallery_young: "Me as a Kid", gallery_university: "At University", gallery_old: "Me Now",
@@ -56,13 +55,15 @@ export default {
     contact_title: "I'd love to hear from you",
     contact_p: "If you'd like to get in touch or learn more about me, feel free to reach out here.",
     contact_wa: "WhatsApp", contact_fb: "Facebook", contact_ig: "Instagram",
-    qr_note: "Scan the code to reach the site quickly",
 
     footer_tagline: "Personal Website",
     footer_copy: "© 2026 Khalid. All rights reserved.",
 
     aria_lang_toggle: "Switch language", aria_theme_toggle: "Toggle dark/light mode",
     aria_mobile_menu: "Open menu", back_to_top: "Back to top",
+    aria_faith_prev: "Previous", aria_faith_next: "Next", aria_faith_copy: "Copy text",
+    aria_copy_phone: "Copy phone number",
+    aria_lightbox_prev: "Previous", aria_lightbox_next: "Next", aria_lightbox_close: "Close",
 
     notfound_message: "The page you're looking for doesn't exist.",
     notfound_back: "Back to Home",
