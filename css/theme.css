@@ -1,0 +1,53 @@
+:root {
+    --primary: #10b981;
+    --primary-glow: rgba(16, 185, 129, 0.15);
+    --gold: #d4af37;
+    --gold-glow: rgba(212, 175, 55, 0.18);
+
+    --bg-dark: #0f172a;
+    --surface-dark: #1e293b;
+    --surface-secondary-dark: #16213a;
+    --text-dark: #f8fafc;
+    --text-muted-dark: #94a3b8;
+    --border-dark: #334155;
+
+    --bg-light: #f8fafc;
+    --surface-light: #ffffff;
+    --surface-secondary-light: #f1f5f9;
+    --text-light: #0f172a;
+    --text-muted-light: #64748b;
+    --border-light: #e2e8f0;
+
+    --transition-fast: 0.3s ease;
+    --transition-smooth: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Unified shape & elevation tokens */
+    --radius-sm: 10px;
+    --radius: 16px;
+    --radius-lg: 22px;
+    --radius-pill: 999px;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    --shadow-lift: 0 15px 35px rgba(0, 0, 0, 0.16);
+    --brand-gradient: linear-gradient(135deg, var(--primary), var(--gold));
+
+    /* Active theme (defaults to dark) */
+    --bg: var(--bg-dark);
+    --surface: var(--surface-dark);
+    --surface-secondary: var(--surface-secondary-dark);
+    --text: var(--text-dark);
+    --text-muted: var(--text-muted-dark);
+    --border: var(--border-dark);
+    --nav-bg: rgba(15, 23, 42, 0.7);
+    --pattern-opacity: 0.05;
+}
+
+html.light-theme {
+    --bg: var(--bg-light);
+    --surface: var(--surface-light);
+    --surface-secondary: var(--surface-secondary-light);
+    --text: var(--text-light);
+    --text-muted: var(--text-muted-light);
+    --border: var(--border-light);
+    --nav-bg: rgba(248, 250, 252, 0.7);
+    --pattern-opacity: 0.045;
+}

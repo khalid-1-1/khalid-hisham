@@ -52,12 +52,6 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 
-<!-- Necessary exception: sets dir/lang and the saved dark/light theme
-     before first paint, so a returning visitor never sees a flash of the
-     wrong language, direction, or theme. The timeout is a safety net: if
-     js/language.js ever fails to load (bad MIME type on some host, network
-     hiccup...), the page still becomes visible instead of staying blank
-     forever. -->
 <script>
 (function () {
     var lang = localStorage.getItem('khalid-lang') || 'ar';
@@ -158,8 +152,6 @@
     </div>
 </section>
 
-<!-- Projects: dedicated section, rendered from data/projects.js via js/projects.js.
-     Placeholder projects only (marked "coming soon") — no invented projects. -->
 <section id="projects" class="projects-section section-padding">
     <div class="container">
         <div class="section-header reveal">
@@ -171,7 +163,7 @@
     </div>
 </section>
 
-<!-- Skills: dedicated section, rendered from data/skills.js via js/projects.js. -->
+
 <section id="skills" class="skills-section section-padding">
     <div class="container">
         <div class="section-header reveal">
@@ -183,9 +175,7 @@
     </div>
 </section>
 
-<!-- Personal journey: three photos only (young -> university -> now), replacing the
-     old multi-group gallery. The "Memories & Events" group has been removed entirely
-     per the redesign brief, along with its images, styles, scripts and translation keys. -->
+
 <section id="gallery" class="gallery-section section-padding">
     <div class="container">
         <div class="section-header reveal">
@@ -221,12 +211,6 @@
     </div>
 </section>
 
-<!-- ============================================================
-     Personal content: Hobbies, Quran Journey, Faith, Media.
-     Deliberately quieter than Projects/Skills (see .personal-section
-     in style.css) so it reads as "who Khalid is" rather than
-     competing with the professional sections as a second main act.
-     ============================================================ -->
 <section id="hobbies" class="hobbies-section personal-section section-padding">
     <div class="container">
         <div class="section-header reveal">
