@@ -7,8 +7,8 @@ export const projects = [
       en: 'A smart WhatsApp bot designed to facilitate communication and automate tasks.' 
     },
     technologies: ['Node.js', 'JavaScript', 'WhatsApp Web API'],
-    demo: '', 
-    github: '', 
+    demo: '../404.html', 
+    github: '../404.html', 
     comingSoon: true 
   }
 ];
