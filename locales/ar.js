@@ -1,5 +1,5 @@
 export default {
-    nav_home: "الرئيسية", nav_about: "من أنا", nav_projects: "مشاريعي", nav_skills: "مهاراتي",
+    nav_home: "الرئيسية", nav_about: "من أنا", nav_games: "ألعابي", nav_projects: "مشاريعي", nav_skills: "مهاراتي",
     nav_gallery: "رحلتي بالصور", nav_hobbies: "الجانب الشخصي",
     nav_quran: "رحلتي مع القرآن",
     nav_media: "قرآن وأناشيد", nav_contact: "تواصل",
@@ -28,6 +28,10 @@ export default {
     hobbies_subtitle: "وقت الفراغ", hobbies_title: "هواياتي واهتماماتي",
     hobby_swim: "السباحة", hobby_code: "البرمجة", hobby_games: "الألعاب",
     hobby_football: "كرة القدم", hobby_edit: "المونتاج والإيديت", hobby_gym: "الجيم",
+
+    games_subtitle: "استراحة", games_title: "ألعابي",
+    games_note: "جرّب اللعبة هنا في الموقع مباشرة من غير أي تحميل.",
+    aria_game_modal: "نافذة اللعبة",
 
     projects_subtitle: "أعمالي", projects_title: "مشاريعي",
     projects_empty_title: "المشاريع قيد الإضافة",

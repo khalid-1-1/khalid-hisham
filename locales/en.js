@@ -1,5 +1,5 @@
 export default {
-    nav_home: "Home", nav_about: "About", nav_projects: "Projects", nav_skills: "Skills",
+    nav_home: "Home", nav_about: "About", nav_games: "Games", nav_projects: "Projects", nav_skills: "Skills",
     nav_gallery: "My Journey", nav_hobbies: "Personal Side",
     nav_quran: "Quran Journey",
     nav_media: "Quran & Nasheeds", nav_contact: "Contact",
@@ -28,6 +28,10 @@ export default {
     hobbies_subtitle: "Free Time", hobbies_title: "My Hobbies & Interests",
     hobby_swim: "Swimming", hobby_code: "Programming", hobby_games: "Gaming",
     hobby_football: "Football", hobby_edit: "Video Editing", hobby_gym: "Gym",
+
+    games_subtitle: "Take a break", games_title: "My Games",
+    games_note: "Play right here on the site — no download needed.",
+    aria_game_modal: "Game window",
 
     projects_subtitle: "My Work", projects_title: "My Projects",
     projects_empty_title: "Projects are coming soon",
