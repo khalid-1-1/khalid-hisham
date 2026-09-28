@@ -78,6 +78,7 @@
             <li><a href="#home" class="nav-link active" data-i18n="nav_home">الرئيسية</a></li>
             <li><a href="#about" class="nav-link" data-i18n="nav_about">من أنا</a></li>
             <li><a href="#projects" class="nav-link" data-i18n="nav_projects">مشاريعي</a></li>
+            <li><a href="#games" class="nav-link" data-i18n="nav_games">ألعابي</a></li>
             <li><a href="#skills" class="nav-link" data-i18n="nav_skills">مهاراتي</a></li>
             <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">رحلتي بالصور</a></li>
             <li><a href="#hobbies" class="nav-link" data-i18n="nav_hobbies">هواياتي</a></li>
@@ -162,6 +163,18 @@
     </div>
 </section>
 
+
+<section id="games" class="games-section section-padding">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="subtitle" data-i18n="games_subtitle">استراحة</span>
+            <h2 data-i18n="games_title">ألعابي</h2>
+            <div class="line"></div>
+        </div>
+        <p class="games-note reveal" data-i18n="games_note">جرّب اللعبة هنا في الموقع مباشرة من غير أي تحميل.</p>
+        <div class="games-grid" aria-live="polite"></div>
+    </div>
+</section>
 
 <section id="skills" class="skills-section section-padding">
     <div class="container">
@@ -454,6 +467,7 @@
             <a href="#home" data-i18n="nav_home">الرئيسية</a>
             <a href="#about" data-i18n="nav_about">من أنا</a>
             <a href="#projects" data-i18n="nav_projects">مشاريعي</a>
+            <a href="#games" data-i18n="nav_games">ألعابي</a>
             <a href="#skills" data-i18n="nav_skills">مهاراتي</a>
             <a href="#quran-journey" data-i18n="nav_quran">رحلتي مع القرآن</a>
             <a href="#gallery" data-i18n="nav_gallery">رحلتي بالصور</a>
@@ -487,14 +501,27 @@
     </div>
 </div>
 
+<div class="game-modal" id="game-modal" role="dialog" aria-modal="true" data-i18n-aria="aria_game_modal" aria-label="نافذة اللعبة">
+    <div class="game-modal-bar">
+        <span class="game-modal-title" id="game-modal-title"></span>
+        <div class="game-modal-actions">
+            <a id="game-modal-newtab" class="game-modal-btn" href="#" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square" aria-hidden="true"></i></a>
+            <button id="game-modal-close" class="game-modal-btn" type="button" aria-label="إغلاق اللعبة"><i class="fas fa-times" aria-hidden="true"></i></button>
+        </div>
+    </div>
+    <iframe id="game-frame" class="game-frame" title="Game" src="about:blank" allow="fullscreen; autoplay" referrerpolicy="no-referrer"></iframe>
+</div>
+
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script type="module" src="js/theme.js"></script>
 <script type="module" src="js/language.js"></script>
 <script type="module" src="js/projects.js"></script>
+<script type="module" src="js/games.js"></script>
 <script type="module" src="js/gallery.js"></script>
 <script type="module" src="js/navigation.js"></script>
 <script type="module" src="js/audio.js"></script>
 <script type="module" src="js/interactions.js"></script>
+<script type="module" src="js/background.js"></script>
 </body>
 </html>
