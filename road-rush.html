@@ -1302,6 +1302,47 @@
   });
 
 })();
+   // 1. استدعاء مكتبات Firebase
+  const firebaseScript1 = document.createElement('script');
+  firebaseScript1.src = "https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js";
+  document.head.appendChild(firebaseScript1);
+
+  const firebaseScript2 = document.createElement('script');
+  firebaseScript2.src = "https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js";
+  document.head.appendChild(firebaseScript2);
+
+  // 2. تشغيل قاعدة البيانات بمجرد تحميل المكتبات
+  firebaseScript2.onload = function() {
+    const firebaseConfig = {
+      // ستقوم بوضع رابط قاعدة بياناتك هنا لاحقاً
+      databaseURL: "https://console.firebase.google.com/u/0/project/road-rush-score/database/road-rush-score-default-rtdb/data/~2F?hl=en-US"
+    };
+    
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+    
+    // جلب أعلى نتيجة عالمية وتحديثها فوراً إذا تغيرت
+    db.ref('globalHighScore').on('value', (snapshot) => {
+      const globalBest = snapshot.val();
+      if (globalBest !== null && globalBest > state.best) {
+        state.best = globalBest;
+        ui.bestVal.textContent = Math.floor(state.best); // تحديث الشاشة
+      }
+    });
+
+    // تعديل دالة الخسارة لترفع النتيجة الجديدة للسيرفر
+    const originalTriggerGameOver = triggerGameOver;
+    triggerGameOver = function() {
+      originalTriggerGameOver(); // تشغيل دالة الخسارة الأصلية
+      
+      // إذا كانت النتيجة الحالية أعلى من العالمية، ارفعها!
+      if (Math.floor(state.distance) >= state.best) {
+        db.ref('globalHighScore').set(Math.floor(state.distance))
+          .then(() => console.log("تم تسجيل رقم قياسي عالمي جديد!"))
+          .catch((error) => console.log("لم يتم التحديث، الرقم العالمي أعلى."));
+      }
+    };
+  };
 </script>
 </body>
 </html>
