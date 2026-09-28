@@ -1,7 +1,3 @@
-// Faith section content — bilingual. The Qur'an verse text itself always stays
-// in Arabic (in both language modes) since it must never be rendered in
-// English; only the surah/ayah citation is localized. Hadith and Adhkar carry
-// a proper English rendering of the meaning alongside the Arabic original.
 export const faithData = {
     ayah: [
         {

@@ -12,3 +12,4 @@ export const projects = [
     comingSoon: true 
   }
 ];
+
