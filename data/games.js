@@ -12,7 +12,7 @@ export const games = [
       en: 'Controls: A / D or arrow keys, Space to brake, on-screen buttons on mobile'
     },
     technologies: ['Three.js', 'JavaScript', 'WebGL'],
-    url: 'road-rush.html',
+    url: '../road-rush.html',
     comingSoon: false
   }
 ];
