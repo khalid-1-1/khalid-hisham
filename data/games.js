@@ -12,12 +12,12 @@ export const games = [
       en: 'Controls: A / D or arrow keys, Space to brake, on-screen buttons on mobile'
     },
     technologies: ['Three.js', 'JavaScript', 'WebGL'],
-    url: '../road-rush.html',
+    url: 'games/road-rush.html',
     comingSoon: false
   },
   
   {
-    id: 'Racing 3D',
+    id: 'racing-3d',
     icon: 'fas fa-car-side',
     title: { ar: 'سباق ثلاثي الأبعاد', en: 'Racing 3D' },
     description: {
@@ -29,11 +29,26 @@ export const games = [
         en: 'Controls: A / D or arrow keys, Space to brake, on-screen buttons for mobile, swipe gestures also supported on mobile'
     },
     technologies: ['Three.js', 'JavaScript', 'WebGL'],
-    url: '../3D-Racing.html',
+    url: 'games/3D-Racing.html',
     comingSoon: false
-}
+  },
 
-  
+  {
+    id: 'memory-game',
+    icon: 'fas fa-brain',
+    title: { ar: 'لعبة الذاكرة', en: 'Memory Game' },
+    description: {
+      ar: 'لعبة ذاكرة بثلاثة مستويات (سهل / متوسط / صعب) مع عدّاد للحركات والوقت وزر تلميح.',
+      en: 'A memory game with three levels (easy / medium / hard), a moves and time counter, and a hint button.'
+    },
+    controls: {
+      ar: 'التحكم: بالماوس أو باللمس',
+      en: 'Controls: mouse or touch'
+    },
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    url: 'games/memory-game.html',
+    comingSoon: false
+  }
 ];
 
 export default games;

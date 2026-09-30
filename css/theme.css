@@ -21,7 +21,7 @@
     --transition-fast: 0.3s ease;
     --transition-smooth: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* Unified shape & elevation tokens */
+    
     --radius-sm: 10px;
     --radius: 16px;
     --radius-lg: 22px;
@@ -30,7 +30,7 @@
     --shadow-lift: 0 15px 35px rgba(0, 0, 0, 0.16);
     --brand-gradient: linear-gradient(135deg, var(--primary), var(--gold));
 
-    /* Active theme (defaults to dark) */
+    
     --bg: var(--bg-dark);
     --surface: var(--surface-dark);
     --surface-secondary: var(--surface-secondary-dark);

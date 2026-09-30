@@ -79,6 +79,7 @@
             <li><a href="#about" class="nav-link" data-i18n="nav_about">من أنا</a></li>
             <li><a href="#projects" class="nav-link" data-i18n="nav_projects">مشاريعي</a></li>
             <li><a href="#games" class="nav-link" data-i18n="nav_games">ألعابي</a></li>
+            <li><a href="#tools" class="nav-link" data-i18n="nav_tools">أدواتي</a></li>
             <li><a href="#skills" class="nav-link" data-i18n="nav_skills">مهاراتي</a></li>
             <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">رحلتي بالصور</a></li>
             <li><a href="#hobbies" class="nav-link" data-i18n="nav_hobbies">هواياتي</a></li>
@@ -159,7 +160,14 @@
             <h2 data-i18n="projects_title">مشاريعي</h2>
             <div class="line"></div>
         </div>
-        <div class="projects-grid" aria-live="polite"></div>
+        <div class="carousel" id="projects-carousel" role="region" aria-roledescription="carousel" data-i18n-aria="aria_projects_carousel" aria-label="مشاريعي">
+            <button type="button" class="carousel-btn carousel-prev" data-i18n-aria="aria_carousel_prev" aria-label="السابق"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+            <div class="carousel-viewport">
+                <div class="projects-grid carousel-track" aria-live="polite"></div>
+            </div>
+            <button type="button" class="carousel-btn carousel-next" data-i18n-aria="aria_carousel_next" aria-label="التالي"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+            <div class="carousel-dots" role="group" data-i18n-aria="aria_carousel_dots" aria-label="اختيار العنصر"></div>
+        </div>
     </div>
 </section>
 
@@ -172,7 +180,33 @@
             <div class="line"></div>
         </div>
         <p class="games-note reveal" data-i18n="games_note">جرّب اللعبة هنا في الموقع مباشرة من غير أي تحميل.</p>
-        <div class="games-grid" aria-live="polite"></div>
+        <div class="carousel" id="games-carousel" role="region" aria-roledescription="carousel" data-i18n-aria="aria_games_carousel" aria-label="ألعابي">
+            <button type="button" class="carousel-btn carousel-prev" data-i18n-aria="aria_carousel_prev" aria-label="السابق"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+            <div class="carousel-viewport">
+                <div class="games-grid carousel-track" aria-live="polite"></div>
+            </div>
+            <button type="button" class="carousel-btn carousel-next" data-i18n-aria="aria_carousel_next" aria-label="التالي"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+            <div class="carousel-dots" role="group" data-i18n-aria="aria_carousel_dots" aria-label="اختيار العنصر"></div>
+        </div>
+    </div>
+</section>
+
+<section id="tools" class="tools-section section-padding">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="subtitle" data-i18n="tools_subtitle">مفيدة كل يوم</span>
+            <h2 data-i18n="tools_title">أدواتي</h2>
+            <div class="line"></div>
+        </div>
+        <p class="games-note reveal" data-i18n="tools_note">أدوات صغيرة عملتها بنفسي، افتحها من هنا مباشرة.</p>
+        <div class="carousel" id="tools-carousel" role="region" aria-roledescription="carousel" data-i18n-aria="aria_tools_carousel" aria-label="أدواتي">
+            <button type="button" class="carousel-btn carousel-prev" data-i18n-aria="aria_carousel_prev" aria-label="السابق"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+            <div class="carousel-viewport">
+                <div class="tools-grid carousel-track" aria-live="polite"></div>
+            </div>
+            <button type="button" class="carousel-btn carousel-next" data-i18n-aria="aria_carousel_next" aria-label="التالي"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+            <div class="carousel-dots" role="group" data-i18n-aria="aria_carousel_dots" aria-label="اختيار العنصر"></div>
+        </div>
     </div>
 </section>
 
@@ -468,6 +502,7 @@
             <a href="#about" data-i18n="nav_about">من أنا</a>
             <a href="#projects" data-i18n="nav_projects">مشاريعي</a>
             <a href="#games" data-i18n="nav_games">ألعابي</a>
+            <a href="#tools" data-i18n="nav_tools">أدواتي</a>
             <a href="#skills" data-i18n="nav_skills">مهاراتي</a>
             <a href="#quran-journey" data-i18n="nav_quran">رحلتي مع القرآن</a>
             <a href="#gallery" data-i18n="nav_gallery">رحلتي بالصور</a>
@@ -518,6 +553,7 @@
 <script type="module" src="js/language.js"></script>
 <script type="module" src="js/projects.js"></script>
 <script type="module" src="js/games.js"></script>
+<script type="module" src="js/tools.js"></script>
 <script type="module" src="js/gallery.js"></script>
 <script type="module" src="js/navigation.js"></script>
 <script type="module" src="js/audio.js"></script>

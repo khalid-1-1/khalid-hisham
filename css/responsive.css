@@ -9,7 +9,7 @@
     .hobbies-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-container h1 { font-size: 2.3rem; }
     .faith-text { font-size: 1.3rem; }
-    .projects-grid { grid-template-columns: 1fr; }
+    .carousel { --slide-w: 64%; --slide-gap: 18px; }
 }
 
 
@@ -17,7 +17,7 @@ html[dir="ltr"] .nav-menu { right: auto; left: -85%; box-shadow: 10px 0 40px rgb
 html[dir="ltr"] .nav-menu.active { left: 0; }
 
 @media (max-width: 700px) {
-    .media-grid { grid-template-columns: 1fr 1fr; }
+    .media-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 600px) {
@@ -34,7 +34,7 @@ html[dir="ltr"] .nav-menu.active { left: 0; }
 }
 
 @media (max-width: 480px) {
-    .media-grid { grid-template-columns: 1fr; }
+    .media-grid { grid-template-columns: minmax(0, 1fr); }
     .audio-volume-slider { width: 50px; }
 }
 
@@ -44,8 +44,14 @@ html[dir="ltr"] .nav-menu.active { left: 0; }
     html[dir="ltr"] .journey-arrow { transform: rotate(-90deg); }
 }
 
-/* 8 روابط في النافبار: تضييق بسيط على الشاشات المتوسطة عشان متتكسرش */
 @media (min-width: 901px) and (max-width: 1120px) {
     .nav-menu { gap: 16px; }
     .nav-link { font-size: 0.88rem; }
+}
+
+
+@media (max-width: 600px) {
+    .carousel { --slide-w: 78%; --slide-gap: 14px; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "view view view" "prev dots next"; }
+    .carousel-btn { width: 42px; height: 42px; }
+    .carousel-dots { padding: 0 8px; }
 }

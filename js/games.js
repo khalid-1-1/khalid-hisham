@@ -1,8 +1,10 @@
 import { games } from '../data/games.js';
+import { createCarousel } from './carousel.js';
+import { openFrame } from './frame-modal.js';
 
 const ui = {
-    ar: { play: 'العب الآن', newTab: 'فتح في صفحة مستقلة', close: 'إغلاق اللعبة', soon: 'قريباً', empty: 'ألعاب جديدة قريباً' },
-    en: { play: 'Play now', newTab: 'Open in a new page', close: 'Close game', soon: 'Coming soon', empty: 'More games coming soon' }
+    ar: { play: 'العب الآن', newTab: 'فتح في صفحة مستقلة', close: 'إغلاق اللعبة', soon: 'قريباً', empty: 'ألعاب جديدة قريباً', dialog: 'نافذة اللعبة' },
+    en: { play: 'Play now', newTab: 'Open in a new page', close: 'Close game', soon: 'Coming soon', empty: 'More games coming soon', dialog: 'Game window' }
 };
 
 const roadSvg = `<svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -29,12 +31,14 @@ const roadSvg = `<svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice"
 </svg>`;
 
 let lang = localStorage.getItem('khalid-lang') || 'ar';
+let carousel = null;
 const t = () => ui[lang] || ui.ar;
 
 function renderGames() {
     const grid = document.querySelector('.games-grid');
     if (!grid) return;
     grid.innerHTML = games.map(g => `
+        <div class="carousel-slide" role="group" aria-roledescription="slide">
         <article class="game-card reveal active" data-game="${g.id}">
             <div class="game-thumb" aria-hidden="true">${g.id === 'road-rush' ? roadSvg : `<i class="${g.icon}"></i>`}</div>
             <div class="game-body">
@@ -47,57 +51,31 @@ function renderGames() {
                 </button>
             </div>
         </article>
+        </div>
     `).join('');
+    if (carousel) carousel.refresh();
 }
 
-
-const modal = document.getElementById('game-modal');
-const frame = document.getElementById('game-frame');
-const modalTitle = document.getElementById('game-modal-title');
-const modalNewTab = document.getElementById('game-modal-newtab');
-const modalClose = document.getElementById('game-modal-close');
-let lastFocused = null;
 
 function openGame(id) {
     const g = games.find(x => x.id === id);
-    if (!g || !modal || !frame) return;
-    lastFocused = document.activeElement;
-    modalTitle.textContent = g.title[lang] || g.title.ar;
-    modalNewTab.href = g.url;
-    modalNewTab.setAttribute('title', t().newTab);
-    modalNewTab.setAttribute('aria-label', t().newTab);
-    modalClose.setAttribute('aria-label', t().close);
-    frame.src = g.url;
-    modal.classList.add('open');
-    document.body.classList.add('game-open');
-    modalClose.focus();
-}
-
-function closeGame() {
-    if (!modal || !modal.classList.contains('open')) return;
-    modal.classList.remove('open');
-    document.body.classList.remove('game-open');
-    frame.src = 'about:blank';           
-    if (lastFocused && lastFocused.focus) lastFocused.focus();
+    if (!g) return;
+    openFrame({
+        title: g.title[lang] || g.title.ar,
+        url: g.url,
+        dialogLabel: t().dialog,
+        labels: { newTab: t().newTab, close: t().close }
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const root = document.getElementById('games-carousel');
+    if (root) carousel = createCarousel(root);
     renderGames();
     const grid = document.querySelector('.games-grid');
     if (grid) grid.addEventListener('click', (e) => {
         const btn = e.target.closest('.game-play-btn');
         if (btn && !btn.disabled) openGame(btn.dataset.game);
-    });
-    if (modalClose) modalClose.addEventListener('click', closeGame);
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGame(); });
-    if (frame) frame.addEventListener('load', () => {
-        if (!modal.classList.contains('open')) return;
-        try {
-            const w = frame.contentWindow;
-            w.focus();
-            
-            w.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeGame(); });
-        } catch (_) {  }
     });
 });
 

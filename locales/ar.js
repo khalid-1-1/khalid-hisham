@@ -1,5 +1,5 @@
 export default {
-    nav_home: "الرئيسية", nav_about: "من أنا", nav_games: "ألعابي", nav_projects: "مشاريعي", nav_skills: "مهاراتي",
+    nav_home: "الرئيسية", nav_about: "من أنا", nav_games: "ألعابي", nav_tools: "أدواتي", nav_projects: "مشاريعي", nav_skills: "مهاراتي",
     nav_gallery: "رحلتي بالصور", nav_hobbies: "الجانب الشخصي",
     nav_quran: "رحلتي مع القرآن",
     nav_media: "قرآن وأناشيد", nav_contact: "تواصل",
@@ -32,6 +32,10 @@ export default {
     games_subtitle: "استراحة", games_title: "ألعابي",
     games_note: "جرّب اللعبة هنا في الموقع مباشرة من غير أي تحميل.",
     aria_game_modal: "نافذة اللعبة",
+    tools_subtitle: "مفيدة كل يوم", tools_title: "أدواتي",
+    tools_note: "أدوات صغيرة عملتها بنفسي، افتحها من هنا مباشرة.",
+    aria_carousel_prev: "السابق", aria_carousel_next: "التالي", aria_carousel_dots: "اختيار العنصر",
+    aria_projects_carousel: "مشاريعي", aria_games_carousel: "ألعابي", aria_tools_carousel: "أدواتي",
 
     projects_subtitle: "أعمالي", projects_title: "مشاريعي",
     projects_empty_title: "المشاريع قيد الإضافة",

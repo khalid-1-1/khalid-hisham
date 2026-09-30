@@ -1,9 +1,11 @@
 import { skillGroups } from '../data/skills.js';
 import { projects } from '../data/projects.js';
+import { createCarousel } from './carousel.js';
 import ar from '../locales/ar.js';
 import en from '../locales/en.js';
 
 const dicts = { ar, en };
+let carousel = null;
 const ui = {
     ar: { comingSoon: 'لسه هتضاف', liveDemo: 'Live Demo', github: 'GitHub' },
     en: { comingSoon: 'Coming soon', liveDemo: 'Live Demo', github: 'GitHub' }
@@ -33,16 +35,20 @@ function renderProjects(lang) {
         const dict = dicts[lang] || dicts.ar;
         grid.classList.add('projects-grid-empty');
         grid.innerHTML = `
-            <div class="projects-empty reveal active">
-                <div class="projects-empty-icon"><i class="fas fa-hammer" aria-hidden="true"></i></div>
-                <h4>${dict.projects_empty_title}</h4>
-                <p>${dict.projects_empty_text}</p>
+            <div class="carousel-slide" role="group" aria-roledescription="slide">
+                <div class="projects-empty reveal active">
+                    <div class="projects-empty-icon"><i class="fas fa-hammer" aria-hidden="true"></i></div>
+                    <h4>${dict.projects_empty_title}</h4>
+                    <p>${dict.projects_empty_text}</p>
+                </div>
             </div>
         `;
+        if (carousel) carousel.refresh();
         return;
     }
     grid.classList.remove('projects-grid-empty');
     grid.innerHTML = projects.map(p => `
+        <div class="carousel-slide" role="group" aria-roledescription="slide">
         <div class="project-card reveal active">
             ${p.comingSoon ? `<span class="project-todo-badge"><i class="fas fa-pen" aria-hidden="true"></i><span>${t.comingSoon}</span></span>` : ''}
             <div class="project-icon"><i class="${p.icon}" aria-hidden="true"></i></div>
@@ -54,7 +60,9 @@ function renderProjects(lang) {
                 <a href="${p.github}" class="btn btn-secondary${p.github === '#' ? ' disabled-link' : ''}"><i class="fab fa-github" aria-hidden="true"></i> <span>${t.github}</span></a>
             </div>
         </div>
+        </div>
     `).join('');
+    if (carousel) carousel.refresh();
 }
 
 function renderAll(lang) {
@@ -63,6 +71,8 @@ function renderAll(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const root = document.getElementById('projects-carousel');
+    if (root) carousel = createCarousel(root);
     renderAll(localStorage.getItem('khalid-lang') || 'ar');
 });
 document.addEventListener('khalid:langchange', (e) => renderAll(e.detail.lang));
