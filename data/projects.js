@@ -22,7 +22,30 @@ export const projects = [
   demo: '../404.html',
   github: '../404.html',
   comingSoon: true
+},
+ 
+   {
+  icon: 'fas fa-drafting-compass',
+  title: { 
+    ar: 'صندوق أدوات المساح', 
+    en: 'Surveyor Toolbox' 
+  },
+  description: {
+    ar: 'منصة ويب متكاملة تقدم حاسبات مساحية متطورة مع عرض النتائج تفاعلياً على الخريطة، مصممة لمساعدة الطلاب والمهندسين في الحسابات الحقلية والمكتبية.',
+    en: 'An integrated web platform providing advanced surveying calculators with interactive map visualization, designed to assist students and engineers in field and office computations.'
+  },
+  technologies: [
+    'React', 
+    'Next.js', 
+    'Leaflet', 
+    'Proj4js', 
+    'Turf.js', 
+    'PostGIS', 
+    'PWA'
+  ],
+  demo: '../404.html',
+  github: '../404.html',
+  comingSoon: true
 }
 
 ];
-
