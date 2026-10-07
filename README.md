@@ -1,142 +1,373 @@
-# خالد هشام | Khalid Hisham — Personal Website
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,45:111827,100:7c3aed&height=280&section=header&text=KHALID%20HISHAM&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=SOFTWARE%20DEVELOPER%20%E2%80%A2%20AUTOMATION%20%E2%80%A2%20WEB%20EXPERIENCES&descAlignY=58&descSize=16" width="100%" />
+</p>
 
-موقع شخصي ثابت (Static Website)، مبني بـ HTML/CSS/JavaScript فقط بدون أي مكتبات أو أطر عمل إضافية، ومُستضاف على GitHub Pages.
+<p align="center">
+  <a href="https://khalid-hisham.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
+  <a href="https://github.com/khalid-1-1">
+    <img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/khalid-hisham-9a4353376">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://t.me/khalid_asta">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
+  </a>
+</p>
 
-## البنية / Project Structure
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=khalid-1-1&style=flat-square&color=7c3aed&label=PROFILE+VIEWS" />
+</p>
 
-```
-/
-├── index.html            # الهيكل والمحتوى فقط — لا CSS ولا JS ولا ترجمة بداخله
-├── css/
-│   ├── theme.css          # نظام الألوان (Design Tokens) + Dark/Light Mode
-│   ├── style.css          # كل التصميم: Layout, Navbar, Hero, Sections, Cards...
-│   └── responsive.css     # كل الـ @media queries (موبايل/تابلت)
-├── js/
-│   ├── theme.js            # تبديل الوضع الليلي/النهاري (التطبيق الأول قبل أول رسم في <head>)
-│   ├── language.js         # تبديل اللغة (عربي/إنجليزي) و RTL/LTR
-│   ├── projects.js         # يرسم قسمي Skills و Projects من بيانات data/
-│   ├── carousel.js         # Carousel أفقي (Vanilla JS) مشترك: مشاريع / ألعاب / أدوات — أسهم + Swipe + نقاط
-│   ├── frame-modal.js      # نافذة التشغيل (iframe) المشتركة بين الألعاب والأدوات
-│   ├── games.js            # يرسم قسم الألعاب داخل الـ Carousel ويفتح اللعبة في النافذة
-│   ├── tools.js            # يرسم قسم الأدوات داخل الـ Carousel ويفتح الأداة في النافذة
-│   ├── background.js       # الخلفية التقنية (Three.js) — ليلي فقط، وتقف في النهاري
-│   ├── gallery.js          # صور الرحلة الشخصية + الـ Lightbox
-│   ├── navigation.js       # Navbar, Mobile Menu, Scroll Spy, Scroll Progress, Back-to-top
-│   ├── audio.js            # المشغل الصوتي المخصص لتلاوات القرآن والأناشيد
-│   └── interactions.js     # بطاقة الوقفة الإيمانية, نسخ الأرقام, Toast
-├── data/
-│   ├── projects.js         # بيانات المشاريع فقط (بدون منطق عرض)
-│   ├── games.js            # بيانات الألعاب فقط (أضف لعبة جديدة من هنا)
-│   ├── tools.js            # بيانات الأدوات فقط (أضف أداة جديدة من هنا)
-│   ├── skills.js           # بيانات المهارات فقط (بدون منطق عرض)
-│   └── content.js          # نصوص الوقفة الإيمانية (آيات/أحاديث/أذكار)
-├── locales/
-│   ├── ar.js               # كل نصوص الواجهة العربية (اللغة الافتراضية)
-│   └── en.js               # كل نصوص الواجهة الإنجليزية
-├── images/                 # الصور المستخدمة فعليًا في الموقع + الـ favicons
-├── games/                  # صفحات الألعاب فقط (كل لعبة ملف HTML مستقل)
-├── tools/                  # صفحات الأدوات (QR / الألوان / بومودورو) — كل أداة ملف HTML مستقل
-├── audio/                  # ملفات القرآن والأناشيد
-├── 404.html                # صفحة 404 بنفس هوية الموقع
-├── robots.txt
-├── sitemap.xml
-└── README.md
+---
+
+# 👋 Khalid Hisham
+
+### Software Developer from Egypt 🇪🇬
+
+I build **web experiences, automation systems, interactive tools, and experimental software**.
+
+My work sits at the intersection of **programming, automation, visual experiences, and practical problem solving**. I enjoy taking an idea from a rough concept and turning it into something people can actually use.
+
+```text
+Think → Design → Build → Test → Improve → Ship
 ```
 
-## ترتيب تجربة الزائر / Page flow
+> **I don't just learn technologies. I learn by building with them.**
 
+---
+
+# 🧠 What I Build
+
+<table>
+<tr>
+<td width="25%" align="center">
+
+### 🌐 Web
+
+Modern websites, interactive interfaces, responsive layouts, and browser-based applications.
+
+</td>
+
+<td width="25%" align="center">
+
+### 🤖 Automation
+
+Bots, automated workflows, APIs, integrations, and systems that reduce repetitive work.
+
+</td>
+
+<td width="25%" align="center">
+
+### 🧩 Tools
+
+Small focused utilities designed to solve real problems quickly.
+
+</td>
+
+<td width="25%" align="center">
+
+### 🎮 Interactive
+
+Games, visual experiments, WebGL experiences, and browser-based experiments.
+
+</td>
+</tr>
+</table>
+
+---
+
+# ⚡ Technology
+
+### Core
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,python" />
+</p>
+
+### Frontend & Interactive
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,tailwind,threejs,webgl" />
+</p>
+
+### Data, GIS & Engineering
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mongodb,firebase" />
+</p>
+
+<p align="center">
+
+`GIS` · `Digital Mapping` · `ArcGIS` · `AutoCAD` · `Leaflet` · `Proj4js` · `Turf.js` · `PostGIS`
+
+</p>
+
+### Development Environment
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,linux" />
+</p>
+
+<p align="center">
+
+`Termux` · `GitHub Pages` · `Vercel` · `PM2`
+
+</p>
+
+---
+
+# 🚀 Selected Work
+
+## 🤖 Asta Bot
+
+### Modular WhatsApp Automation
+
+A modular WhatsApp automation system designed around a **plugin-based architecture**, structured command handling, permission management, and extensibility.
+
+**Focus**
+
+`Automation` · `Bots` · `Plugins` · `Permissions` · `Node.js`
+
+---
+
+## 🧭 Surveyor Toolbox
+
+### Web Tools for Surveying & Digital Mapping
+
+An ambitious web platform focused on **surveying calculations and spatial visualization**, designed to bring useful field and office calculations into an interactive web environment.
+
+**Technology Direction**
+
+`React` · `Next.js` · `Leaflet` · `Proj4js` · `Turf.js` · `PostGIS` · `PWA`
+
+> Built around the intersection of **programming + surveying + GIS**.
+
+---
+
+## 📋 Kurd Platform
+
+### Project & Workflow Management
+
+A platform concept for managing **projects, tasks, clients, and daily workflows**, with an emphasis on organization and automation.
+
+**Technology Direction**
+
+`React` · `Node.js` · `Express` · `MongoDB`
+
+---
+
+# 🎮 Browser Games
+
+I also build interactive browser experiences and games as a way to experiment with **JavaScript, Three.js, WebGL, physics, interaction, and game logic**.
+
+| Project | Technology |
+|:--|:--|
+| 🏎️ **3D Road Rush** | Three.js · WebGL · JavaScript |
+| 🏁 **Racing 3D** | Three.js · WebGL · JavaScript |
+| 🧠 **Memory Game** | HTML · CSS · JavaScript |
+
+All games are designed to run directly in the browser.
+
+---
+
+# 🧰 Web Tools
+
+A collection of lightweight tools built to solve everyday problems.
+
+### 🔳 QR Generator
+Generate customized QR codes and export them as PNG.
+
+`QR` · `Canvas` · `JavaScript`
+
+### 🎨 Color Studio
+Generate palettes, gradients, contrast checks, and ready-to-use CSS.
+
+`CSS` · `Color Systems` · `Gradients`
+
+### ⏱️ Pomodoro
+A focus timer with sessions, breaks, tasks, statistics, and sounds.
+
+`JavaScript` · `Productivity` · `Local Storage`
+
+---
+
+# 🌍 My Personal Website
+
+My personal website is more than a landing page.
+
+It's an ongoing experiment where I combine **development, design, interaction, personal interests, and technology** into one experience.
+
+### Built From Scratch
+
+```text
+HTML
+CSS
+Vanilla JavaScript
+Three.js
+WebGL
+JavaScript Modules
+GitHub Pages
 ```
-Home → About → Projects → Games → Tools → Skills → My Journey (Gallery)
-     → Personal Side (Hobbies, Quran Journey, Faith, Media) → Contact
+
+### Highlights
+
+- 🌙 Dark / Light theme
+- 🌐 Arabic / English interface
+- 🔄 RTL / LTR support
+- 🎨 Interactive UI
+- 🧊 Three.js technical background
+- 🎮 Embedded browser games
+- 🧰 Interactive web tools
+- 🖼️ Personal journey gallery
+- 🎧 Quran & Nasheed audio player
+- 📱 Responsive design
+- ♿ Accessibility-focused interactions
+- ⚡ No build step
+- 📦 Modular JavaScript architecture
+
+<p align="center">
+  <a href="https://khalid-hisham.vercel.app">
+    <img src="https://img.shields.io/badge/EXPLORE%20MY%20WEBSITE-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" />
+  </a>
+</p>
+
+---
+
+# 🗺️ Beyond Code
+
+Programming is a major part of what I do, but it isn't the whole picture.
+
+I'm studying **Surveying & Digital Mapping** at the Faculty of Arts, Benha University, which gives me an interesting combination:
+
+```text
+Geography
+    +
+GIS
+    +
+Digital Mapping
+    +
+Programming
+    ↓
+Spatial Technology
 ```
 
-Projects و Skills لهما قسمان مستقلان الآن (بدل قسم واحد مدمج) لأنهما محور الموقع
-المهني. أقسام Hobbies / Quran Journey / Faith / Media مجمّعة بصريًا بهوية أهدأ
-قليلًا (لون ذهبي بدل الأخضر في العناوين) حتى لا تنافس Projects على أنها القسم
-الرئيسي، مع الاحتفاظ الكامل بالمحتوى والوظائف.
+I enjoy exploring the space between **geography, technology, visualization, and software**.
 
-## إضافة مشروع جديد / Adding a new project
+---
 
-افتح `data/projects.js` وأضف عنصرًا جديدًا داخل مصفوفة `projects` (عربي وإنجليزي معًا):
+# 📖 A Different Side of Me
 
-```js
-{
-    icon: 'fas fa-diagram-project',
-    title: { ar: 'اسم المشروع', en: 'Project Name' },
-    description: { ar: 'وصف قصير...', en: 'Short description...' },
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    demo: 'https://...', github: 'https://...', comingSoon: false
-}
+Technology is only one part of my journey.
+
+I'm also interested in:
+
+- 📖 Quran & Tajweed
+- 🏊 Swimming
+- ⚽ Football
+- 🏋️ Gym & Fitness
+- 🎬 Video Editing
+- 🎮 Gaming
+- 🎨 Visual Creativity
+
+### My Quran Journey
+
+By the grace of Allah, I completed memorizing the **Quran on 1 Ramadan 1443 AH**, corresponding to **April 2, 2022**, at the age of 14.
+
+I'm also continuing to study **Tajweed** and deepen my understanding of Quran recitation.
+
+> ﴿ وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ ﴾
+
+---
+
+# 🧭 Development Philosophy
+
+I care about building software that is:
+
+**Simple enough to understand.  
+Flexible enough to evolve.  
+Useful enough to matter.**
+
+| Principle | Approach |
+|:--|:--|
+| 🧱 **Structure** | Keep systems organized and maintainable. |
+| 🧩 **Modularity** | Build features that can evolve independently. |
+| ⚡ **Performance** | Avoid unnecessary complexity and overhead. |
+| 🎯 **Usability** | Technology should solve a problem, not create one. |
+| 🔐 **Reliability** | Stable behavior matters as much as new features. |
+| 📈 **Growth** | Every project is an opportunity to learn something new. |
+
+---
+
+# 📊 GitHub
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=khalid-1-1&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github&include_all_commits=true" height="180" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khalid-1-1&layout=compact&theme=tokyonight&hide_border=true" height="180" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=khalid-1-1&theme=tokyonight&hide_border=true" width="70%" />
+</p>
+
+---
+
+# 📈 Currently Exploring
+
+```text
+Advanced JavaScript
+        ↓
+Node.js & Backend Architecture
+        ↓
+Automation & APIs
+        ↓
+Databases
+        ↓
+GIS & Spatial Technologies
+        ↓
+Linux & Deployment
+        ↓
+Scalable Systems
 ```
 
-الموقع يعيد رسم قسم "مشاريعي" تلقائيًا بكلتا اللغتين (منطق العرض في `js/projects.js`).
+I'm especially interested in the point where **software engineering meets real-world systems**.
 
-## إضافة مهارة جديدة / Adding a new skill
+---
 
-المهارات مقسّمة في `data/skills.js` داخل `skillGroups` (اللغات والويب / أدوات / أخرى). أضف عنصرًا جديدًا داخل المجموعة المناسبة، أو أضف مجموعة جديدة بنفس الشكل:
+# 🌐 Connect
 
-```js
-{ icon: 'fab fa-python', name: { ar: 'Python', en: 'Python' } }
-```
+<p align="center">
 
-## إضافة صورة / Adding images
+<a href="https://khalid-hisham.vercel.app">
+<img src="https://img.shields.io/badge/Website-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
 
-ضع الصورة داخل `images/` بنفس الاسم المستخدم في `index.html`:
-- `images/khalid-avatar.jpg` — الصورة الشخصية في الـ Hero
-- `images/young-khaled.jpg` — وأنا صغير
-- `images/university-khaled.jpg` — في الجامعة
-- `images/old-khaled.jpg` — وأنا كبير / الآن
+<a href="https://github.com/khalid-1-1">
+<img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
-إذا كانت الصورة غير موجودة، يعرض الموقع Placeholder هادئ بدل رابط مكسور — لا حاجة لأي تعديل إضافي.
+<a href="https://www.linkedin.com/in/khalid-hisham-9a4353376">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
 
-## تعديل النصوص / Editing text
+<a href="https://t.me/khalid_asta">
+<img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
+</a>
 
-كل نصوص واجهة الموقع (عربي/إنجليزي) موجودة في `locales/ar.js` و `locales/en.js` فقط. عدّل القيمة المقابلة للمفتاح (key) الذي تريد تغييره، وسيظهر التعديل في الموقع مباشرة. نصوص الوقفة الإيمانية (آيات/أحاديث/أذكار) مصدرية وليست مترجمة، فهي في `data/content.js` بدلًا من ذلك.
+</p>
 
-## تجربة الموقع محليًا / Local preview
+---
 
-الموقع يستخدم JavaScript Modules (`type="module"`)، وهذه لا تعمل عند فتح `index.html` مباشرة من القرص (`file://`) بسبب قيود المتصفح على CORS. شغّل خادمًا محليًا بسيطًا داخل مجلد المشروع، مثل:
+<p align="center">
 
-```
-python3 -m http.server 8000
-```
+### Built with curiosity. Driven by learning. ⚡
 
-ثم افتح `http://localhost:8000`. على GitHub Pages هذا غير مطلوب — الموقع يعمل مباشرة.
+**Khalid Hisham · Egypt 🇪🇬**
 
-## ملاحظات
+</p>
 
-- اللغة الافتراضية عند أول زيارة: **العربية** (RTL). اختيار المستخدم يُحفظ في `localStorage` ويُطبَّق فورًا بدون Flicker عند الزيارات التالية (وحتى لو تعطّل تحميل ملفات الترجمة لأي سبب، الموقع يظهر تلقائيًا بعد لحظة بدل أن يفضل صفحة فارغة).
-- الوضع الافتراضي للثيم: **Dark**. يُحفظ اختيار المستخدم أيضًا في `localStorage`، ويُطبَّق على وسم `<html>` قبل أول رسم للصفحة (Inline Script داخل `<head>`) بنفس أسلوب اللغة، فلا يظهر أي Flash لثيم خاطئ عند إعادة الزيارة.
-- الصور الشخصية (`khalid-avatar.jpg`, `young-khaled.jpg`, `university-khaled.jpg`, `old-khaled.jpg`) **تظهر افتراضيًا في الـ HTML/CSS بدون أي اعتماد على نجاح تحميل JavaScript** — الجافاسكريبت فقط يضيف تأثير التحميل الخفيف، ويُخفي الصورة ويعرض Placeholder فقط لو فشل تحميلها فعليًا (مثلاً لو اسم الملف مش مطابق تمامًا). لو صورة معينة مش ظاهرة، السبب شبه المؤكد هو أن اسم الملف في `images/` مش مطابق حرفيًا (بما فيها حالة الأحرف — GitHub Pages حساس لحالة الأحرف، على عكس ويندوز/ماك).
-- Favicon مُولّد من الصورة الشخصية الحقيقية بأحجام متعددة (32px, 180px, 192px) لدعم كل الأجهزة.
-- قسم "ذكريات ومناسبات" (Memories & Events) الذي كان موجودًا سابقًا تم حذفه بالكامل مع كل الصور والأكواد والترجمات المرتبطة به.
-- لا يوجد قسم "Services" منفصل حاليًا — المحتوى الموجود فعليًا (مهارات + مشاريع لسه هتضاف) مش كافي لعرض خدمات احترافية بدون اختراع معلومات غير موجودة. لو حبيت تضيفه لاحقًا لما يبقى عندك مشاريع/خدمات فعلية، ابعتلي التفاصيل وهضيفه بنفس الأسلوب.
-- متغيرات الألوان في `css/theme.css` تتبع نظام تصميم واحد (`--bg`, `--surface`, `--surface-secondary`, `--text`, `--text-muted`, `--primary`, `--border`, `--shadow`, `--radius`)، بالإضافة لتوكنز الهوية الذهبية (`--gold`) المستخدمة في محتوى القرآن والوقفة الإيمانية.
-- الموقع يعمل بالكامل بدون أي Build step — فقط ارفع الملفات كما هي على GitHub Pages.
-
-
-## إضافة لعبة جديدة / Adding a new game
-
-1. حط ملف اللعبة (HTML واحد مستقل) في مجلد `games/` مثل `games/my-game.html` (الأدوات مكانها `tools/` مش `games/`).
-2. افتح `data/games.js` وأضف عنصرًا جديدًا (عربي وإنجليزي معًا) مع `url: 'games/my-game.html'`.
-3. الكارت وزر "العب الآن" ونافذة التشغيل بيتعملوا تلقائيًا.
-
-## إضافة أداة جديدة / Adding a new tool
-
-1. حط ملف الأداة (HTML واحد مستقل) في مجلد `tools/` مثل `tools/my-tool.html`.
-2. افتح `data/tools.js` وأضف عنصرًا جديدًا (عربي وإنجليزي معًا) مع `url: 'tools/my-tool.html'`.
-3. الكارت وزر "افتح الأداة" ونافذة التشغيل بيتعملوا تلقائيًا.
-
-## الـ Carousel
-
-المشاريع والألعاب والأدوات بتستخدم نفس `js/carousel.js` (بدون مكتبات):
-- عنصر واحد: الأسهم والنقاط مخفية. عنصران: الأسهم ظاهرة (وبتتعطل لو العنصرين ظاهرين مرة واحدة). 3 عناصر أو أكتر: الحالي في المنتصف وجزء من السابق والتالي على الجانبين، ونقاط تحت الكروسل.
-- ترتيب الكروسل ثابت في العربي والإنجليزي: السهم اليمين = التالي، والشمال = السابق (محتوى الكروت نفسه بيتبع اتجاه اللغة).
-- الكيبورد: ← / → لما الـ focus داخل الكروسل. السحب باللمس والماوس مدعوم، والسحب العمودي بيحرّك الصفحة عادي.
-- لإضافة عنصر: عدّل ملف البيانات فقط (`data/projects.js` أو `data/games.js` أو `data/tools.js`).
-
-## الخلفية / Background
-
-`js/background.js` بيحمّل Three.js من cdnjs بعد تحميل الصفحة، ويرسم جسيمات + شكل سلكي خلف المحتوى.
-الخلفية تظهر في الوضع الليلي فقط، وتقف تمامًا في الوضع النهاري أو لما التاب يكون مخفي أو لو الجهاز مفعّل "تقليل الحركة".
-لتغيير الألوان: عدّل قيمة `setHSL(... ? 0.52 : 0.95 ...)` (اللون) و `color: 0x00f3ff` (الشكل السلكي) في نفس الملف.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:111827,100:050816&height=120&section=footer" width="100%" />
+</p>
