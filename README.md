@@ -356,6 +356,10 @@ I'm especially interested in the point where **software engineering meets real-w
 <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
 </a>
 
+<a href="https://arab-web.vercel.app/u/K_1">
+  <img src="https://img.shields.io/badge/Arab%20Web-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
+
 </p>
 
 ---
