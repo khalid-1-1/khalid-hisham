@@ -22,7 +22,7 @@ export const tools = [
     url: 'tools/color-generator.html'
   },
   {
-    id: 'pomodoro',
+    id: 'Pomodoro',
     icon: 'fas fa-hourglass-half',
     title: { ar: 'بومودورو', en: 'Pomodoro' },
     description: {
@@ -31,6 +31,17 @@ export const tools = [
     },
     tags: ['Timer', 'Tasks', 'Focus'],
     url: 'tools/pomodoro.html'
+  },
+  {
+    id: 'Arabic-Toolkit',
+    icon: 'fas fa-language',
+    title: { ar: 'Arabic Toolkit', en: 'Arabic Toolkit' },
+    description: {
+      ar: 'أدوات النص العربي : صفحة بسيطة فيها أربع أدوات. كتابة الأرقام والمبالغ بالعملات، وتنظيف النص من التشكيل والرموز، وتحويل التاريخ للهجري، وعمل رابط عربي للمواقع.',
+      en: 'Arabic text tools: A simple page with four tools. It allows you to write numbers and amounts in various currencies, remove diacritics and symbols from text, convert dates to Hijri calendar, and create Arabic links to websites.'
+    },
+    tags: ['Arabic', 'Tools', 'Text', 'Converter', 'Language'],
+    url: 'tools/Arabic-Toolkit.html'
   }
 ];
 
