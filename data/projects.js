@@ -9,7 +9,7 @@ export const projects = [
     technologies: ['Node.js', 'JavaScript', 'WhatsApp Web API'],
     demo: '../404.html', 
     github: '../404.html', 
-    comingSoon: true 
+    comingSoon: false
   },
     {
   icon: 'fas fa-tasks',
