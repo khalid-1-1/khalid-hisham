@@ -16,11 +16,11 @@ export const projects = [
     icon: 'fas fa-robot',
     title: { ar: 'بوت أستا', en: 'Asta Bot' },
     description: { 
-      ar: 'بوت واتساب ذكي مصمم لتسهيل التواصل وإدارة المهام تلقائياً.', 
-      en: 'A smart WhatsApp bot designed to facilitate communication and automate tasks.' 
+      ar: 'بوت واتساب ذكي مصمم لتسهيل التواصل وإدارة المهام تلقائياً وتنصيب البوت من الداشبورد المخصصة لإدارته.', 
+      en: 'A smart WhatsApp bot designed to facilitate communication, automate tasks, and install the bot from the dashboard dedicated to managing it.' 
     },
     technologies: ['Node.js', 'JavaScript', 'WhatsApp Web API'],
-    demo: '../404.html', 
+    demo: 'https://asta-bot.khalid-hisham.workers.dev', 
     github: '../404.html', 
     comingSoon: false 
   },
