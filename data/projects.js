@@ -21,7 +21,7 @@ export const projects = [
     },
     technologies: ['Node.js', 'JavaScript', 'WhatsApp Web API'],
     demo: 'https://asta-bot.khalid-hisham.workers.dev', 
-    github: '../404.html', 
+    github: 'https://github.com/khalid-1-1/Asta-Bot.git', 
     comingSoon: false 
   },
  
